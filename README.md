@@ -1,10 +1,18 @@
-# Pre-requirements
+# Context
+This project aims to validate some initial authentication scenarios for the Ton solution (Stone Co.).
+The project created was based on an automation stack directed to the Java language, making use of the following technologies:
+- [Serenity BDD](https://serenity-bdd.info/)
+- [Cucumber 6](https://cucumber.io/)
+- [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/)
+- Others: Lombok, JUnit and Appium Java Client 
+
+## Pre-requirements
 - [JDK 1.8+](https://www.oracle.com/br/java/technologies/javase/javase8u211-later-archive-downloads.html)
 - [Maven 3.6.x+](https://maven.apache.org/download.cgi)
 - [Android SDK](https://developer.android.com/studio?gclid=Cj0KCQjw1ouKBhC5ARIsAHXNMI_fZut2oHtjqUHPzgvy0JAr8cRi2LwMTUSVfjRrbaijQYQAE2woNvoaApX0EALw_wcB&gclsrc=aw.ds#downloads)
 - [Appium](https://appium.io/) - Node.js and NPM latest stable version
 
-# Environment Variables and PATH configuration required
+## Environment Variables and PATH configuration required
 
 ```shell
 export ANDROID_HOME=/Users/ton.sample/Library/Android/sdk 
@@ -13,7 +21,7 @@ export PATH="${ANDROID_HOME}/emulator:${PATH}"
 export PATH="${ANDROID_HOME}/platform-tools:${PATH}
 ```
 
-# Serenity settings
+## Serenity settings
 1. The following settings need to be changed depending on the Android Virtual Device or Physical Device used to run the tests - File **serenity.conf**
 
 ```json
@@ -31,7 +39,7 @@ appium {
 adb devices -l
 ```
 
-#Steps to execute the automation project
+## Steps to execute the automation project
 1. Setting the ANDROID_HOME environment variable and add to the PATH the commands folders
 
 
